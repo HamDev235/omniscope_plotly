@@ -1,0 +1,94 @@
+{
+  "name": "animation-slider",
+  "frameworkVersion": "v1",
+  "tags": [],
+  "sandbox": false,
+  "autoPane": true,
+  "autoQuery": true,
+  "dataLimit": 10000,
+  "supportsSelection": true,
+  "options": {
+    "items": {
+      "continent": {
+        "displayName": "continent",
+        "type": "GROUPING"
+      },
+      "country": {
+        "displayName": "country",
+        "type": "GROUPING"
+      },
+      "gdpPercap": {
+        "displayName": "gdpPercap",
+        "type": "GROUPING",
+        "mandatory": true
+      },
+      "lifeExp": {
+        "displayName": "lifeExp",
+        "type": "GROUPING",
+        "mandatory": true
+      },
+      "paneX": {
+        "displayName": "Pane X",
+        "type": "GROUPING",
+        "list": true
+      },
+      "paneY": {
+        "displayName": "Pane Y",
+        "type": "GROUPING",
+        "list": true
+      },
+      "pop": {
+        "displayName": "pop",
+        "type": "GROUPING",
+        "mandatory": true
+      },
+      "year": {
+        "displayName": "year",
+        "type": "GROUPING"
+      }
+    },
+    "structure": {
+      "toolbar": [
+        "year",
+        "continent",
+        "country",
+        "lifeExp",
+        "gdpPercap",
+        "pop"
+      ],
+      "x": [
+        "paneX"
+      ],
+      "y": [
+        "paneY"
+      ]
+    }
+  },
+  "defaultOptions": {
+    "items": {},
+    "pane": {
+      "yAxisHeaderWidth": 75,
+      "paneWidth": 200,
+      "paneHeight": 200,
+      "showGridLines": true,
+      "gridLineThickness": 1,
+      "gridLineColour": "rgba(229,229,229,1)",
+      "headerStyle": {
+        "size": 12,
+        "colour": "#333333",
+        "backgroundColour": "#FFFFFF"
+      },
+      "xHeaderStyle": {},
+      "yHeaderStyle": {},
+      "tileHeaderStyle": {},
+      "xHeaderPlacement": "TOP",
+      "yHeaderPlacement": "LEFT",
+      "showColourKeyInEveryPane": false,
+      "enableTouchScrolling": false
+    }
+  },
+  "pane": {
+    "minWidth": 50,
+    "minHeight": 50
+  }
+}
